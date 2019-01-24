@@ -5,12 +5,9 @@
       
       body {
         margin: 0;
+        background-color: rgba(255,181,107,0.5);
       }
       
-      .header {
-        width: 100%;
-        height: 10vh;
-      }
       
       .menuContainer {
         float: right;
@@ -20,11 +17,28 @@
       
       .rightbox {
         width: 25vw;
-        height: 85vh;
+        height: 96vh;
         margin-left: -.6vw;
         padding: 13px;
         float: left;
         position: fixed;
+        text-shadow: 3px 2px rgba(255,144,107,0.15);
+      }
+      
+      .checkoutlist {
+        width: 25vw;
+        overflow: auto;
+      }
+      
+      .checkoutbtn {
+        width: 25vw;
+        height: 10vh;
+        background-color: #ff6b6b;
+        bottom: 0;
+        position: absolute;
+        margin-left: -.6vw;
+        border-radius: 0px 8px;
+        box-shadow: 5px 5px rgba(255,144,107,0.15);
       }
       
       .menu {
@@ -35,6 +49,7 @@
         border-radius: 8px;
         float: right;
         position: relative;
+        box-shadow: 5px 5px rgba(255,144,107,0.15);
       }
       
       .menuimg {
@@ -46,25 +61,24 @@
       .dropbtn {
         width: 290px;
         height: 70px;
-        background-color: purple;
+        background-color: #ff6bb5;
         color: white;
         padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
-        position: absolute;
         bottom: 0;
         border-radius: 0px 0px 8px 8px;
       }
       
       .dropbtn:hover, .dropbtn:focus {
-        background-color: #e072dc;
+        background-color: #ff6bff;
       }
       
       .dropdown {
         width:290px;
         height:70px;
-        position: absolute;
+        position: relative;
         bottom: 0;
         border-radius: 0px 0px 8px 8px;
       }
@@ -78,6 +92,7 @@
         overflow: auto;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        padding: 5px;
       }
       
       .show {display: block;}
@@ -86,12 +101,11 @@
   
   <body>
     
-    <div class="header">
-      <h1>menu blabber temp</h1>
-    </div>
-    
     <div class="rightbox">
+      <h1>Not Jamba Juice</h1>
       <p>list? i dont know but there will be text here, maybe about the clicky click and current order?</p>
+      <div id="orderList" class="checkoutlist"></div>
+      <div class="checkoutbtn">Replace with button REF TO CHECKOUTPAGE</div>
     </div>
     
     <div class="menuContainer">
@@ -108,7 +122,7 @@
       </div>
       <div class="menu">
         <div class="menuimg">
-          
+          image lol
         </div>
         <div class="dropdown">
           <button onclick="dropMenu2()" class="dropbtn">V</button>
@@ -193,11 +207,22 @@
       }
       
       
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("ddcontent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
       
       
       
-      
-      // notes: TO DO: fix dd so it drops down to the bottom, test to see if json files will work (it SHOULD).
+      // notes: TO DO: test to see if json files will work (it SHOULD).
     </script>
     
   </body>

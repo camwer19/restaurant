@@ -1,0 +1,102 @@
+{
+  "smoothies":[
+    {
+      "type":"Strawberry",
+      "price": 4.44,
+      "ingredients":[
+        "Strawberries",
+        "Bananas",
+        "Yogurt",
+        "Apple-Strawberry Juice"
+        ]
+    },
+    
+    {
+      "type":"Lots of berries apparently. note: change this",
+      "price": 4.44,
+      "ingredients":[
+        "Strawberries",
+        "Bananas",
+        "Orange Sherbet",
+        "Mixed Berry Juice Blend"
+        ]
+    },
+    
+    {
+      "type":"Peach",
+      "price": 4.44,
+      "ingredients":[
+        "Peaches",
+        "Bananas",
+        "Orange Sherbet",
+        "Peach Juice Blend"
+        ]
+    },
+    
+    {
+      "type":"Mango...Chili?",
+      "price": 4.44,
+      "ingredients":[
+        "Mangos",
+        "Sherbet with Pineapple",
+        "Spicy Chili Lime Blend",
+        "Passionfruit Mango Juice Blend"
+        ]
+    },
+    
+    {
+      "type":"Banana Berry",
+      "price": 4.44,
+      "ingredients":[
+        "Apple-Strawberry Juice Blend",
+        "Bananas",
+        "Yogurt",
+        "Blueberries",
+        "Raspberry Sherbet"
+        ]
+    },
+    
+    {
+      "type":"Pineapple",
+      "price": 4.44,
+      "ingredients":[
+        "Pineapple Juice",
+        "Strawberries",
+        "Pineapple Sherbet",
+        "Bananas",
+        "Greek Yogurt"
+        ]
+    },
+    
+    {
+      "type":"Caribbean Passion",
+      "price": 4.44,
+      "ingredients":[
+        "Passion Fruit-Mango Juice Blend",
+        "Strawberries",
+        "Orange Sherbet",
+        "Peaches"
+        ]
+    },
+    
+    {
+      "type":"Strawberry Surf(?)",
+      "price": 4.44,
+      "ingredients":[
+        "Lemonade",
+        "Strawberries",
+        "Lime Sherbet",
+        "Peaches"
+        ]
+    },
+    
+    {
+      "type":"THE REAL MANGO",
+      "price": 4.44,
+      "ingredients":[
+        "Mangos",
+        "Pineapple Sherbet"
+        ]
+    }
+  ]
+}
