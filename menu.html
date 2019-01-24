@@ -3,6 +3,15 @@
     
     <style>
       
+      body {
+        margin: 0;
+      }
+      
+      .header {
+        width: 100%;
+        height: 10vh;
+      }
+      
       .menuContainer {
         float: right;
         margin: 20px;
@@ -10,9 +19,12 @@
       }
       
       .rightbox {
-        width: 350px;
-        height: 600px;
+        width: 25vw;
+        height: 85vh;
+        margin-left: -.6vw;
+        padding: 13px;
         float: left;
+        position: fixed;
       }
       
       .menu {
@@ -23,6 +35,12 @@
         border-radius: 8px;
         float: right;
         position: relative;
+      }
+      
+      .menuimg {
+        width: 290px;
+        height: 220px;
+        border-radius: 8px 8px 0px 0px;
       }
       
       .dropbtn {
@@ -78,52 +96,70 @@
     
     <div class="menuContainer">
       <div class="menu">
+        <div class="menuimg">
+          
+        </div>
         <div class="dropdown">
-          <button onclick="dropMenu()" class="dropbtn">V</button>
-          <div id="dropdownMenu" class="ddcontent">
-            <p>testing</p>
+          <button onclick="dropMenu1()" class="dropbtn">V</button>
+          <div id="dropdownMenu1" class="ddcontent">
+            <p>testing1</p>
           </div>
         </div>
       </div>
       <div class="menu">
+        <div class="menuimg">
+          
+        </div>
         <div class="dropdown">
-          <button onclick="dropMenu()" class="dropbtn">V</button>
-          <div id="dropdownMenu" class="ddcontent">
-            <p>testing</p>
+          <button onclick="dropMenu2()" class="dropbtn">V</button>
+          <div id="dropdownMenu2" class="ddcontent">
+            <p>testing2</p>
           </div>
         </div>
       </div>
       <div class="menu">
+        <div class="menuimg">
+          
+        </div>
         <div class="dropdown">
-          <button onclick="dropMenu()" class="dropbtn">V</button>
-          <div id="dropdownMenu" class="ddcontent">
-            <p>testing</p>
+          <button onclick="dropMenu3()" class="dropbtn">V</button>
+          <div id="dropdownMenu3" class="ddcontent">
+            <p>testing3</p>
           </div>
         </div>
       </div>
     </div>
     <div class="menuContainer">
       <div class="menu">
+        <div class="menuimg">
+          
+        </div>
         <div class="dropdown">
-          <button onclick="dropMenu()" class="dropbtn">V</button>
-          <div id="dropdownMenu" class="ddcontent">
-            <p>testing</p>
+          <button onclick="dropMenu4()" class="dropbtn">V</button>
+          <div id="dropdownMenu4" class="ddcontent">
+            <p>testing4</p>
           </div>
         </div>
       </div>
       <div class="menu">
+        <div class="menuimg">
+          
+        </div>
         <div class="dropdown">
-          <button onclick="dropMenu()" class="dropbtn">V</button>
-          <div id="dropdownMenu" class="ddcontent">
-            <p>testing</p>
+          <button onclick="dropMenu5()" class="dropbtn">V</button>
+          <div id="dropdownMenu5" class="ddcontent">
+            <p>testing5</p>
           </div>
         </div>
       </div>
       <div class="menu">
+        <div class="menuimg">
+          
+        </div>
         <div class="dropdown">
-          <button onclick="dropMenu()" class="dropbtn">V</button>
-          <div id="dropdownMenu" class="ddcontent">
-            <p>testing</p>
+          <button onclick="dropMenu6()" class="dropbtn">V</button>
+          <div id="dropdownMenu6" class="ddcontent">
+            <p>testing6</p>
           </div>
         </div>
       </div>
@@ -131,7 +167,37 @@
     
     
     <script>
-      // note: insert food images, create dd for each food (check w3 if ur DUMB)
+      
+      function dropMenu1() {
+        document.getElementById("dropdownMenu1").classList.toggle("show");
+      }
+      
+      function dropMenu2() {
+        document.getElementById("dropdownMenu2").classList.toggle("show");
+      }
+      
+      function dropMenu3() {
+        document.getElementById("dropdownMenu3").classList.toggle("show");
+      }
+      
+      function dropMenu4() {
+        document.getElementById("dropdownMenu4").classList.toggle("show");
+      }
+      
+      function dropMenu5() {
+        document.getElementById("dropdownMenu5").classList.toggle("show");
+      }
+      
+      function dropMenu6() {
+        document.getElementById("dropdownMenu6").classList.toggle("show");
+      }
+      
+      
+      
+      
+      
+      
+      // notes: TO DO: fix dd so it drops down to the bottom, test to see if json files will work (it SHOULD).
     </script>
     
   </body>
