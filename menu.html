@@ -5,7 +5,6 @@
       
       body {
         margin: 0;
-        background-color: rgba(255,181,107,0.5);
       }
       
       
@@ -111,12 +110,11 @@
     <div class="menuContainer">
       <div class="menu">
         <div class="menuimg">
-          
         </div>
         <div class="dropdown">
           <button onclick="dropMenu1()" class="dropbtn">V</button>
           <div id="dropdownMenu1" class="ddcontent">
-            <p>testing1</p>
+            <p id="slot1">testing1</p>
           </div>
         </div>
       </div>
@@ -127,7 +125,7 @@
         <div class="dropdown">
           <button onclick="dropMenu2()" class="dropbtn">V</button>
           <div id="dropdownMenu2" class="ddcontent">
-            <p>testing2</p>
+            <p id="slot2">testing2</p>
           </div>
         </div>
       </div>
@@ -138,7 +136,7 @@
         <div class="dropdown">
           <button onclick="dropMenu3()" class="dropbtn">V</button>
           <div id="dropdownMenu3" class="ddcontent">
-            <p>testing3</p>
+            <p id="slot3">testing3</p>
           </div>
         </div>
       </div>
@@ -151,7 +149,7 @@
         <div class="dropdown">
           <button onclick="dropMenu4()" class="dropbtn">V</button>
           <div id="dropdownMenu4" class="ddcontent">
-            <p>testing4</p>
+            <p id="slot4">testing4</p>
           </div>
         </div>
       </div>
@@ -162,7 +160,7 @@
         <div class="dropdown">
           <button onclick="dropMenu5()" class="dropbtn">V</button>
           <div id="dropdownMenu5" class="ddcontent">
-            <p>testing5</p>
+            <p id="slot5">testing5</p>
           </div>
         </div>
       </div>
@@ -173,7 +171,7 @@
         <div class="dropdown">
           <button onclick="dropMenu6()" class="dropbtn">V</button>
           <div id="dropdownMenu6" class="ddcontent">
-            <p>testing6</p>
+            <p id="slot6">testing6</p>
           </div>
         </div>
       </div>
@@ -223,6 +221,17 @@
       
       
       // notes: TO DO: test to see if json files will work (it SHOULD).
+      
+      
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var mydata = JSON.parse(this.responseText);
+          document.getElementById('slot1').innerHTML = mydata.smoothies[1].price;
+        }
+      }
+      xmlhttp.open("Get", "smoothies.json", true);
+      xmlhttp.send();
     </script>
     
   </body>

@@ -2,7 +2,7 @@
   "smoothies":[
     {
       "type":"Strawberry",
-      "price": 4.44,
+      "price": 4.41,
       "ingredients":[
         "Strawberries",
         "Bananas",
@@ -13,7 +13,7 @@
     
     {
       "type":"Lots of berries apparently. note: change this",
-      "price": 4.44,
+      "price": 4.42,
       "ingredients":[
         "Strawberries",
         "Bananas",
@@ -24,7 +24,7 @@
     
     {
       "type":"Peach",
-      "price": 4.44,
+      "price": 4.43,
       "ingredients":[
         "Peaches",
         "Bananas",
@@ -46,7 +46,7 @@
     
     {
       "type":"Banana Berry",
-      "price": 4.44,
+      "price": 4.45,
       "ingredients":[
         "Apple-Strawberry Juice Blend",
         "Bananas",
@@ -58,7 +58,7 @@
     
     {
       "type":"Pineapple",
-      "price": 4.44,
+      "price": 4.46,
       "ingredients":[
         "Pineapple Juice",
         "Strawberries",
@@ -70,7 +70,7 @@
     
     {
       "type":"Caribbean Passion",
-      "price": 4.44,
+      "price": 4.47,
       "ingredients":[
         "Passion Fruit-Mango Juice Blend",
         "Strawberries",
@@ -81,7 +81,7 @@
     
     {
       "type":"Strawberry Surf(?)",
-      "price": 4.44,
+      "price": 4.48,
       "ingredients":[
         "Lemonade",
         "Strawberries",
@@ -92,7 +92,7 @@
     
     {
       "type":"THE REAL MANGO",
-      "price": 4.44,
+      "price": 4.49,
       "ingredients":[
         "Mangos",
         "Pineapple Sherbet"
